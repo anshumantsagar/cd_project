@@ -1,0 +1,7 @@
+.college-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-between;
+}

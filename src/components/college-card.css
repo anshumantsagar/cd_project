@@ -1,0 +1,170 @@
+.college-card {
+    min-width: 840px;
+    margin: 25px 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.college-card img {
+    width: 840px;
+}
+.college-card .image-container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.college-card .image-container-child {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+}
+.rating {
+    float: right;
+    padding: 10px;
+    background: #f5a626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    border-radius: 5px;
+    color: white;
+}
+.rating .rating-primary {
+    font-size: 18px;
+}
+.tags {
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+}
+.item {
+    background: white;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #444444;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.description-university {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.heading {
+    color: #444444;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sub-heading {
+    font-size: 13px;
+}
+.light-heading {
+    color: #adadad;
+}
+.green-heading {
+    color: #37b396
+}
+.pricing {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: flex-end;
+}
+
+.offer-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.offer-bar .bar {
+    background: #ccf5e7;
+    margin: 10px 0;
+    line-height: 35px;
+    padding: 0 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.tag {
+    cursor: pointer;
+    display: block;  
+    height: 20px;
+    margin-left: 20px;
+    position: relative;
+    line-height: 2.5em;
+    padding-left: 1em;
+    padding-right: 2em;
+    background: #dd1c26;
+    color: black;
+}
+.tag::before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    margin-right: 38px;
+    right: 0; 
+    
+    border-right: 10px solid black;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #dd1c26;
+}
+
+.offered-price {
+    color: #dd1c26;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.desc-line {
+    line-height: 30px;
+}
+.vc {
+    position: absolute;
+    right: 0;
+    top: -20;
+}
+.original-price {
+    text-decoration: line-through;
+    font-size: 11px;
+}
+.pointer {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background: #68a7ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+.in-colleges-rating {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 13px;
+}
