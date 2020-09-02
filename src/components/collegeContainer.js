@@ -6,7 +6,7 @@ import './college-container.css';
 export default function CollegeContainer(props) {
     return (
         <div className="college-container">
-            {props.collegeData.map((el, index) => <div className="item"><ColledgeCard data={el} /></div>)}
+            {props.collegeData.map((el, index) => <div className="item" key={index}><ColledgeCard data={el} /></div>)}
         </div>
     )
 }
