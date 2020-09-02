@@ -16,8 +16,9 @@
     content: '';
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 99%;
     top: 0;
+    overflow: visible;
     left: 0;
     background: rgba(0,0,0,0.7);
 }
@@ -28,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 20px;
+    margin: 35px 20px;
     border-radius: 5px;
     color: white;
 }
@@ -96,31 +97,6 @@
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
-.tag {
-    cursor: pointer;
-    display: block;  
-    height: 20px;
-    margin-left: 20px;
-    position: relative;
-    line-height: 2.5em;
-    padding-left: 1em;
-    padding-right: 2em;
-    background: #dd1c26;
-    color: black;
-}
-.tag::before {
-    content: "";
-    position: absolute;
-    height: 0px;
-    width: 0px;
-    margin-right: 38px;
-    right: 0; 
-    
-    border-right: 10px solid black;
-    border-bottom: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-right: 10px solid #dd1c26;
-}
 
 .offered-price {
     color: #dd1c26;
@@ -167,4 +143,70 @@
     bottom: 20px;
     right: 20px;
     font-size: 13px;
+}
+
+.polygon {
+    width: 152px;
+    height: 34px;
+    background: #68a7ff;
+    position: relative;
+    top: -17px;
+    right: -1px;
+}
+.polygon::after {
+    content: "";
+    width: 25px;
+    position: absolute;
+    height: 17px;
+    background: #68a7ff;
+    transform: translateX(-100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+}
+.polygon::before {
+    content: '';
+    width: 25px;
+    height: 17px;
+    background: #68a7ff;
+    position: absolute;
+    transform: translate(-100%, 17px);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+}
+.polygon-text {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: white;
+    font-weight: 500px;
+}
+
+.tag {
+    width: 29px;
+    height: 20px;
+    background: #dd1c26;
+    position: relative;
+    margin-left: 20px;
+}
+.tag::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #dd1c26;
+    transform: translateX(-100%);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+}
+.tag::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #dd1c26;
+    transform: translate(-100%, 9px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+}
+.tag-text {
+    position: absolute;
+    color: white;
+    left: 2px;
+
 }

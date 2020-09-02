@@ -20,12 +20,14 @@ export default function CollegeCard(props) {
                         {props.data.tags.map((el,index) => <span className="item" key={index}>{el}</span>)}
                     </div>
                     {props.data.promoted ? <div className="vc">
-                        <div className="pointer">
-                           PROMOTED
+                        <div class="polygon">
+                            <div className="polygon-text">
+                                PROMOTED
+                            </div>
                         </div>
                     </div> : ""}
                     <div className="in-colleges-rating">
-                        #7 in 260 colleges in north campus
+                        #{props.data.ranking}
                     </div>
                 </div>
             </div>
@@ -44,23 +46,27 @@ export default function CollegeCard(props) {
                             </span>
                         </div>
                         <span className="desc-line">
-                            <span className="sub-heading">{props.data.famous_nearest_places} </span>
-                            <span className="sub-heading sub-sub-heading">{props.data.nearest_place[1]}</span>
+                            <span className="sub-heading">{props.data.nearest_place[0]} </span>
+                            <span className="sub-heading light heading">| {props.data.nearest_place[1]} </span>
                         </span>
                         <div className="desc-line">
                             <span className="sub-heading green-heading">93% Match </span>
                             <span className="">from GTB Nagar, </span>
-                            <span className="">{props.data.ranking}</span>
+                            <span className="">{props.data.nearest_place[1]}</span>
                         </div>
                     </div>
                 </div>
                 <div className="pricing">
-                    <div style={{lineHeight: "35px", display:"flex", flexDirection: "row"}}>
+                    <div style={{lineHeight: "18px", display:"flex", flexDirection: "row"}}>
                         <span className="original-price">
                             ₹{props.data.original_fees}
                         </span>
                         <span className="tag">
-                            <div style={{position: "absolute", color: "white", top: "0"}}>{props.data.discount}</div>
+                            <span style={{width:"1px", height: "1px", borderRadius: "50%", background: "white"}}>
+                            </span>
+                            <span className="tag-text">
+                                {props.data.discount}
+                            </span>
                         </span>
                     </div>
                     <div className="offered-price">
