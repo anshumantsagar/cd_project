@@ -20,7 +20,7 @@ export default function CollegeCard(props) {
                         {props.data.tags.map((el,index) => <span className="item" key={index}>{el}</span>)}
                     </div>
                     {props.data.promoted ? <div className="vc">
-                        <div className="polygon">
+                        <div class="polygon">
                             <div className="polygon-text">
                                 PROMOTED
                             </div>
