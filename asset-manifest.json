@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cd_project/static/css/main.9956be1e.chunk.css",
+    "main.js": "/cd_project/static/js/main.f34682da.chunk.js",
+    "main.js.map": "/cd_project/static/js/main.f34682da.chunk.js.map",
+    "runtime-main.js": "/cd_project/static/js/runtime-main.43cf1ee4.js",
+    "runtime-main.js.map": "/cd_project/static/js/runtime-main.43cf1ee4.js.map",
+    "static/js/2.1e2c8095.chunk.js": "/cd_project/static/js/2.1e2c8095.chunk.js",
+    "static/js/2.1e2c8095.chunk.js.map": "/cd_project/static/js/2.1e2c8095.chunk.js.map",
+    "index.html": "/cd_project/index.html",
+    "precache-manifest.efca89039e38cbe1a51f62e04f5b9ca8.js": "/cd_project/precache-manifest.efca89039e38cbe1a51f62e04f5b9ca8.js",
+    "service-worker.js": "/cd_project/service-worker.js",
+    "static/css/main.9956be1e.chunk.css.map": "/cd_project/static/css/main.9956be1e.chunk.css.map",
+    "static/js/2.1e2c8095.chunk.js.LICENSE.txt": "/cd_project/static/js/2.1e2c8095.chunk.js.LICENSE.txt",
+    "static/media/college_02.jpg": "/cd_project/static/media/college_02.619ee97e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43cf1ee4.js",
+    "static/js/2.1e2c8095.chunk.js",
+    "static/css/main.9956be1e.chunk.css",
+    "static/js/main.f34682da.chunk.js"
+  ]
+}
