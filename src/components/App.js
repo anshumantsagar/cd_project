@@ -1,8 +1,8 @@
 import React, { useCallback, useReducer } from 'react';
 
 import CollegeContainer from './collegeContainer';
-import './App.css';
 import * as jsonData from '../assets/colleges.json';
+import './App.css';
 
 export default function App() {
     const initialState = {

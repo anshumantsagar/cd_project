@@ -4,16 +4,15 @@
     padding: 49px 51px ;
 }
 
-.conainer h1 {
-    font-size: 18px;
-    font-family: DINPro;
+.container h1 {
+    font-size: 25px;
     line-height: 0.97;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
     color: #444444;
-    font-weight: 500;
-    
+    font-weight: bold;
+    margin-left: 15px;
 }
 
 .colleges-container {
